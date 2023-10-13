@@ -2,6 +2,7 @@ import 'package:device_preview/device_preview.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:live_test_ostad/NewsFeed.dart';
+import 'package:live_test_ostad/SelectionScreen.dart';
 import 'package:live_test_ostad/SizeSelectorScreen.dart';
 
 void main() {
@@ -34,7 +35,7 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home:const SizeSelector(),
+      home:const  SelectionScreen(),
     );
   }
 }
