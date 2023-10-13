@@ -16,13 +16,13 @@ class _SelectionScreenState extends State<SelectionScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("ListView with Selection"),
+        title: Text("Selection Screen"),
       ),
       body: ListView.builder(
-        itemCount: items.length,
+        itemCount: 20,
         itemBuilder: (context, index) {
           return ListTile(
-            title: Text(items[index]),
+            title: Text(items[index+1]),
             onTap: () {
               setState(() {
                 if (selectedItems.contains(index)) {
